@@ -3,8 +3,10 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  max-width:100%;
+  max-height:100%;
   pointer-events: none;
+  border-radius: 50%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +37,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Ferris {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.ciclegraph {
+  width:50vw;
+  height:50vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -25vw 0 0 -25vw;
+}
+
+.ciclegraph .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15vw;
+  height: 15vw;
+  margin: calc(-100px / 2);
+
+  border-radius: 50%;
+}
+
+.tex {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  margin: 0;
+  background: -webkit-linear-gradient(#f29532, #45b67e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 220%;
+  font-family: monospace;
 }
