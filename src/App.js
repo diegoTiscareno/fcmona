@@ -1,22 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import GridDemo from './GridDemo';
+import React, { useState } from "react";
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
+  const [modalGif, setModalGif] = useState();
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <GridDemo
+          onGifClick={(gif, e) => {
+            console.log("gif", gif);
+            e.preventDefault();
+            setModalGif(gif);
+          }}
+        />
       </header>
     </div>
   );
