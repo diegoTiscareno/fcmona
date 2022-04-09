@@ -2,11 +2,11 @@
 import React, { useRef, useEffect } from "react";
 
 import "./App.css";
-import cleo from './cleo.png';
-import gris from './gris.png';
-import hochi from './hochi.png';
-import oso from './oso.png';
-import tom from './tom.png';
+import cleo from './cleo.jpeg';
+import gris from './gris.jpeg';
+import hochi from './hochi.jpeg';
+import oso from './oso.jpeg';
+import tom from './tom.jpeg';
 
 export default function Ferris() {
   const graph = useRef(null);

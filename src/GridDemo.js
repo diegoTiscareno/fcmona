@@ -28,7 +28,7 @@ function GridDemo({ onGifClick }) {
         height: height,
         backgroundColor: "#282c34",
         position: "fixed",
-        opacity: "60%",
+        opacity: "85%",
         top: 0,
         left: 0
         }}>

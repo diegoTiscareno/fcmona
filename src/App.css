@@ -70,9 +70,7 @@
   left: 50%;
   transform: translate(-50%, -50%) rotate(-20deg);
   margin: 0;
-  background: -webkit-linear-gradient(#f29532, #45b67e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #f29532;
   font-size: 220%;
   font-family: monospace;
 }
